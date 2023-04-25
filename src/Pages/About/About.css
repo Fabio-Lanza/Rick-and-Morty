@@ -1,0 +1,15 @@
+.about-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.about-container img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.about-container h1,
+.about-container p{
+    padding: 15px;
+}

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 import axios from "axios";
 import CharacterCard from "../../components/CharacterCard/CharacterCard";
+import Search from "../../components/Search/Search";
 
-//https://rickandmortyapi.com/api/character
 
 function Home() {
   const [characters, setCharacters] = useState([]);
@@ -21,6 +21,7 @@ function Home() {
 
   return (
     <div className="home-container">
+      <Search setCharacters={setCharacters}/>
       <h1>Main Characters</h1>
       <div className="characters-container">
       {characters.map((item)=> <CharacterCard key={item.id} character={item}/>)}
